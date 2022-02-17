@@ -1,0 +1,58 @@
+@mixin home_button {
+width: 10rem;
+
+color: $secondary_color;
+border-radius: 10rem;
+padding: 10px 15px;
+background-color: $button_color;
+text-transform: uppercase;
+font-size: 0.9rem;
+transition: 0.2s ease;
+
+&:hover{
+   background-color:  aqua;
+}
+ 
+
+}
+
+p{
+       width: 100%;
+    @media screen and (max-width:600px) {
+ width: 300px;
+}
+
+
+}
+
+@mixin google-font($font) {
+    $font: unquote($font);
+    @import url(https://fonts.googleapis.com/css?family=#{$font});
+}
+
+@mixin content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     @media screen and (max-width:700px) {
+                flex-wrap: wrap;
+                padding-top:5rem;
+            }
+
+}
+
+@mixin text{
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+@mixin image_side{
+  
+            margin: 1rem;
+            object-fit: contain;
+            position: relative;
+
+            
+}

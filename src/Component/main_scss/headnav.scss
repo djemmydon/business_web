@@ -1,0 +1,144 @@
+@import "../../css/mixin.scss";
+@import "../../css/partial.scss";
+
+@include google-font('Raleway');
+
+.my_nav{
+    display: flex;
+    background-color: none;
+       background-color: $secondary_color;
+       height: 80px;
+
+       .logo  h2{
+           padding: 30px;
+           color: white;
+       }
+
+        .menu_icon{
+                display: none;
+              
+            }
+
+        .my_navbar{
+       
+            right: 4rem;
+            z-index: 10;
+            top: 1rem;
+         position: absolute;
+
+            ul{
+                display: inline-flex;
+                padding: 10px;
+                
+            }
+
+            li{
+                padding-right: 50px;
+            }
+            li:last-child a{
+                @include home_button;
+                white-space: nowrap;
+            }
+
+            a{
+                   color: $text_color;
+                    font-size:1.2rem;
+                    text-transform: capitalize;
+                    transition: 0.3s;
+
+                        &:hover{
+                        color: aqua;
+                    }
+            }
+        }
+
+    @media screen and (max-width:900px) {
+
+            display: flex;
+
+            .menu_icon{
+                display: block;
+                position: absolute;
+                right: 0;
+                padding: 20px 10px ;
+                z-index: 20;
+                  color: $title_color;
+            }
+
+        .my_navbar{
+                position: absolute;
+                right: 0;
+                height: 500px;
+                width: 100%;
+                background-color:$secondary_color ;
+                top: -100%;
+             transition: 0.5s;
+       
+            
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 1rem;
+
+                }
+
+                li{
+                    padding: 20px;
+
+                }
+
+                a{
+                    color: $text_color;
+                    font-size:1.2rem;
+                    text-transform: capitalize;
+                
+                }
+
+            
+        }
+    }
+}
+
+    .my_nav .active{
+                    top: 0;
+                    animation-name: navbar_animate;
+                    animation-duration: 0.5s;
+                    width: 100%;
+                }
+
+
+
+
+
+
+
+
+
+                //animation
+
+                @keyframes navbar_animate {
+                    0%{
+                       transform: translate(-10%,-10%);
+                       left: -100%;
+                       top: -100%;
+                       opacity: 0.4;
+                    }
+                    20%{
+                       transform: translate(-50%,-50%);
+                       border-radius: 30rem;
+                       opacity: 0.6;
+                    }
+                    100%{
+                       transform: translate(0);
+                       opacity: 1;
+                           
+                    }
+
+                    -100%{
+                              transform: translate(-50%,-50%);
+                       border-radius: 10rem;
+                       opacity: 0.6;
+                    }
+                }

@@ -1,0 +1,248 @@
+@import "../../css/mixin.scss";
+@import "../../css/partial.scss";
+
+@include google-font('Raleway');
+
+
+.my_header{
+background-color: rgb(0, 34, 17);
+  
+ background-position: top;
+ background-size:cover;
+    background-repeat: no-repeat;
+    font-family: $head_font;
+    max-height:1280vh;
+
+    .header_item{
+        display: flex;
+        overflow: hidden;
+            @media screen and (max-width:700px) {
+                flex-wrap: wrap;
+                padding-top:5rem;
+            }
+
+          .image_side{
+            height: 525px;
+            margin-top: 60px;
+            object-fit: contain;
+            position: relative;
+            
+      
+
+         img{
+              max-width:100%;
+              max-height: 520px;
+            position: relative;
+    }
+    }
+
+
+    .text_side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+ 
+
+        color: white;
+    }
+
+    .text_head{
+        color: $button_color;
+    }
+
+    h1{
+        font-size:4rem ;
+        white-space: nowrap;
+      font-family: $head_font;
+      color: $text_color;
+    }
+
+    h2{
+        font-size:5rem ;
+        white-space: nowrap;
+      font-family: $head_font;
+      font-weight: 800;
+    }
+    }
+
+    .button_side{
+   padding-left: 10px;
+        button{
+            @include home_button;
+            border: none;
+            
+        
+        }  
+
+            .feature_btn{
+                background: none;
+                color: white;
+                margin-left: 10px;
+                border: 2px solid $title_color;
+
+                :hover{
+                    color: $primary_color;
+                    background-color: $text_color;
+                }
+            }
+    }
+
+
+  @media screen and (max-width:1000px) {
+    .text_side{
+
+        h1,h2{
+            font-size: 3rem;
+        }
+    }
+  }
+  @media screen and (max-width:900px) {
+    .text_side{
+
+        h1,h2{
+            font-size: 2rem;
+        }
+    }
+  }
+  @media screen and (max-width:600px) {
+     
+    .text_side{
+
+        h1,h2{
+            font-size: 2rem;
+        }
+    }
+  }
+}
+
+
+// content 
+.content_vid{
+        background-color: $background_color1;
+height: 100vh;
+padding-top: 100px;
+
+@media screen and (max-width:600px) {
+    height: 120vh;
+}
+    .content_item{
+
+        justify-content: center;
+        align-items: center;
+    .video_side{
+
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem;
+    @media screen and (max-width:700px) {
+
+        
+    }
+              .line{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 200;
+    width: 90%;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #02ffe2;
+    border-radius: 10px;
+            }
+        img{
+            width: 100%;
+         min-width: 100%;
+        
+         position: relative;
+
+     
+        }
+    }
+
+
+        .content_text_side{
+        display: flex;
+        flex-direction: column;
+      margin-left: 2rem;
+      
+
+        color: white;
+
+        .text_head{
+        color: $secondary_color
+    }
+
+    h1{
+        font-size:3rem ;
+        
+      font-family: $head_font;
+      color: $primary_color;
+    }
+    h1::first-letter{
+   font-weight: 700;
+    }
+
+    h2{
+        font-size:3rem ;
+      font-family: $head_font;
+      font-weight: 800;
+      color: $primary_color;
+
+    }
+
+    p{
+        color: $primary_color;
+    }
+
+    @media screen and (max-width:600px) {
+        margin: 1rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h1{
+        font-size: 2.3rem;
+    }
+    }
+
+    button{
+        @include home_button;
+        outline: none;
+        border: none;
+        position: absolute;
+        bottom: 2rem;
+        right: 4rem;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        font-weight: 600;
+        z-index: 400;
+        text-align: center;
+      
+
+    }
+       .button_side{
+
+        a{
+            color: $primary_color;
+            font-size: 1.2rem;
+            font-family: $head_font;
+            font-weight: 600;
+
+        }
+    }
+
+}
+
+
+
+}
+
+
+
