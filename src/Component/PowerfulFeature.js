@@ -8,6 +8,7 @@ import Icon5 from '../../src/svg/icon5.svg'
 import Icon6 from '../../src/svg/icon6.svg'
 import left  from '../../src/svg/lines_left.svg'
 import right from '../../src/svg/lines_right.svg'
+import { Link } from 'react-router-dom'
 
 
 function PowerfulFeature() {
@@ -80,9 +81,9 @@ function PowerfulFeature() {
           <div className="text_sd">
             
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil q Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, provident.</p>
-            <a href="" alt=''>
+           <Link to='/'>
               <button>BOOK A DEMO</button>
-            </a>
+            </Link>
           </div>
         </div>
         </article>
