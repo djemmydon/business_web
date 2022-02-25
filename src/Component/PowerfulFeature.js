@@ -80,7 +80,7 @@ function PowerfulFeature() {
           <div className="text_sd">
             
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil q Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, provident.</p>
-            <a href="">
+            <a href="" alt=''>
               <button>BOOK A DEMO</button>
             </a>
           </div>

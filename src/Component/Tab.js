@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom'
+
 import '../Component/main_scss/tabs.scss'
 import  Fancy1 from '../../src/images/fancy_section_1.png'
 import  Fancy2 from '../../src/images/fancy_section_2.png'
