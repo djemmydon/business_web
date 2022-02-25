@@ -2,11 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import  Image from '../../src/images/HeroImage.png'
 import  VideoImage from '../../src/images/video_image.png'
+import  Image2 from '../../src/svg/Hero_BG_Image.svg'
 import './main_scss/home_header.scss'
 import './main_scss/home_header.scss'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import {BsPlayFill} from 'react-icons/bs'
 import PowerfulFeature from './PowerfulFeature'
+import Footer from './Footer'
+import Tab from './Tab'
 
 
 
@@ -16,7 +19,7 @@ function HomeHeader() {
     <header>
  <div className="container-fluid my_header">
 
-                                    <div className="header_item">
+                                    <div className="header_item ">
                                         <div className=" text_side">
                                         <div className="text_head">
                                             <h5>WE GO BLACK</h5>
@@ -46,8 +49,11 @@ function HomeHeader() {
 
                                                 <div className=" image_side">
                                                     <img src={Image} alt="" />
+                                                    <img src={Image2} alt="" className='img_side_abs' />
                                                 </div>
     </div>
+
+    <Tab />
    </div>
  <div className="container-fluid content_vid ">
 
@@ -84,6 +90,7 @@ function HomeHeader() {
    </div>
 
         <PowerfulFeature />
+        <Footer />
     </header>
   
   )

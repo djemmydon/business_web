@@ -4,15 +4,17 @@
 @include google-font('Raleway');
 
 
-
+.feature_article{
+    background-color: $secondary-color;
+}
 .feature{
     background: $secondary-color;
     height: auto;
-
+padding: 2rem 0;
 
     .feature_first_content{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         color: $text_color;
         font-family: $head_font;
         align-content: center;
@@ -64,12 +66,15 @@
 .feature_second_content{
 
     display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
+             @media screen and (max-width:600px) {
+            
+        }
+    
 
 .feature_item2{
     padding: 40px;
-        
         border: 2px solid $title_color;
         border-radius: 2rem;
        color: $text_color;
@@ -78,6 +83,7 @@
 
         &:hover{
         border: 2px solid white;
+        cursor: pointer;
             
         }
 
@@ -89,11 +95,70 @@
         h2{
             font-size: 1.2rem;
             padding-top: 0.9rem;
-            white-space: nowrap;
+
         }
+
+      
+    
+    }
+
+        h2{
+        font-size: 1.3rem;
+        color: white;
+    
+    }
+    p{
+        font-size: 0.9rem;
+        
+        color: $text_color;
+        @media screen and (max-width:600px) {
+            width: 100%;
+        }
+    
     }
 }
 
 }
+}
+
+
+.schedule_demo{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+padding: 4rem 0;
+    .header_sd{
+        display: flex;
+        gap: 10px;
+
+        h2{
+            color: $title_color
+        }
+
+    
+    
+    }
+
+        .text_sd{
+
+            display: flex;
+            flex-direction: column;
+            p{
+                color: $text_color;
+                text-align: center;
+                margin-top: 20px;
+    margin-bottom: 20px;
+            }
+            a{
+                text-align: center;
+           
+                button{
+            @include home_button;
+            border: none;
+            outline: none;
+
+                }
+            }
+        }
 }
 

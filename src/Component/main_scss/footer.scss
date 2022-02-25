@@ -1,0 +1,58 @@
+@import "../../css/mixin.scss";
+@import "../../css/partial.scss";
+
+@include google-font('Raleway');
+@include google-font('Nunito');
+
+
+.footer{
+    background-color: #181818;
+
+
+.footer_content{
+
+ 
+    .footer_nav_sec{
+        display: flex;
+      gap: 7em;
+
+      @media screen and (max-width:700px) {
+          gap: 0rem;
+         
+      }
+
+          @media screen and (max-width:400px) {
+          flex-wrap: wrap;
+         
+      }
+
+      .nav_sec_1, .nav_sec_2, .nav_sec_3{
+
+        h3{
+            font-size: 1.3rem;
+            color: #B3B6BB;
+            font-family: 'Nunito';
+        }
+
+        ul{
+
+            li{
+                    padding-top: 15px;
+                    white-space: nowrap;
+          a{
+              color: $text_color;
+              padding-top: 10px;
+              transition: 0.7s ;
+              
+          &:hover{
+              color: $title_color
+          }
+          }
+
+            }
+        }
+      }
+    }
+}
+
+}

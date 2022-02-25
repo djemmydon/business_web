@@ -6,11 +6,13 @@ import Icon3 from '../../src/svg/icon3.svg'
 import Icon4 from '../../src/svg/icon4.svg'
 import Icon5 from '../../src/svg/icon5.svg'
 import Icon6 from '../../src/svg/icon6.svg'
+import left  from '../../src/svg/lines_left.svg'
+import right from '../../src/svg/lines_right.svg'
 
 
 function PowerfulFeature() {
   return (
-    <article>
+    <article className='feature_article'>
         <div className="feature contaimer-fluid">
             <div className="feature_first_content container">
                 <div className="feature_item">
@@ -65,6 +67,24 @@ function PowerfulFeature() {
         </div>
 
         
+
+        <div className="schedule_demo container">
+          <div className="header_sd">
+                  <img src={left} alt="" />
+                  <h2>Schedule Demo</h2>
+                  <img src={right} alt="" />
+
+          
+          </div>
+
+          <div className="text_sd">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil q Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, provident.</p>
+            <a href="">
+              <button>BOOK A DEMO</button>
+            </a>
+          </div>
+        </div>
         </article>
   )
 }

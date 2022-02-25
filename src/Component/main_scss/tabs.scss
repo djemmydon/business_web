@@ -1,0 +1,85 @@
+@import "../../css/mixin.scss";
+@import "../../css/partial.scss";
+
+
+.content_pane{
+
+
+
+    .content_item{
+        display: none;
+
+        .header_item{
+            padding-top: 5rem;
+
+            .text_head{
+                h5{
+                    font-size: 1rem;
+                }
+
+
+            }
+
+            .main_content{
+                h1{
+                    font-size: 3rem;
+                }
+                h2{
+                    font-size: 3rem;
+                }
+            }
+        }
+
+    }
+
+
+
+    .content_active{
+        display: block;
+          animation-name: animate;
+          animation-duration: 0.5s;
+
+    }
+
+
+    @keyframes animate {
+        0%{
+            opacity: 0;
+        }
+
+  
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+   
+}
+
+ .navigation{
+   
+        ul{
+            display: flex;
+            gap: 40px;
+            justify-content: end;
+    padding-bottom: 5rem;
+    padding-right: 10rem;
+
+            li{
+            color: #B2B6BB;
+            border-bottom: 2px solid #B2B6BB;
+            cursor: pointer;
+
+            }
+
+            .active_tab{
+                color: $text_color;
+            border-bottom: 2px solid $title_color;
+            transition: 1s;
+                
+              
+            }
+         
+        }
+    }

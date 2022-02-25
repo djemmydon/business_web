@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import { Sling as Hamburger } from 'hamburger-react'
+import  Logo from '../../src/svg/Logo.svg'
 
 import { Link } from 'react-router-dom'
 import './main_scss/headnav.scss'
-import {IoIosEye} from "react-icons/io"
+
 
 const NavItem = [
     {
@@ -49,7 +50,7 @@ function HeadNav() {
    <header>
        <div className="my_nav">
            <div className="logo">
-            <h2><IoIosEye color='#02ffe2' size={40}/> MYRAGE</h2>
+            <img src={Logo} alt="" className='logo_eye' />
 
              
            </div>

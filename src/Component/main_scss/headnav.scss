@@ -2,17 +2,23 @@
 @import "../../css/partial.scss";
 
 @include google-font('Raleway');
+@include google-font('Nunito');
 
+
+
+a{
+    font-family: 'Nunito', sans-serif;
+}
 .my_nav{
     display: flex;
     background-color: none;
        background-color: $secondary_color;
        height: 80px;
 
-       .logo  h2{
-           padding: 30px;
-           color: white;
-       }
+.logo_eye{
+    width: 9rem;
+    margin: 1.3rem;
+}
 
         .menu_icon{
                 display: none;
@@ -35,14 +41,24 @@
             li{
                 padding-right: 50px;
             }
-            li:last-child a{
-                @include home_button;
+            li:last-child {
+               background-color: $title_color;
+             text-align: center;
+             padding: 7px 15px;
+             border-radius: 5rem;
+    
                 white-space: nowrap;
+
+
+
+                a{
+   color: $secondary_color;
+                }
             }
 
             a{
                    color: $text_color;
-                    font-size:1.2rem;
+                    font-size:1rem;
                     text-transform: capitalize;
                     transition: 0.3s;
 
@@ -86,6 +102,10 @@
 
                 li{
                     padding: 20px;
+
+                &:last-child{
+                padding: 7px 50px;
+                }
 
                 }
 
