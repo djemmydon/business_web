@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
 
 
-       <div className="App">
+       <div className="App container-fluid">
           <HeadNav />
     </div>
 

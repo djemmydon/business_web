@@ -14,6 +14,7 @@ background-image: url(../../svg/Desktop.svg);
     font-family: $head_font;
     max-height:1280vh;
     padding-top: 4rem;
+  overflow: hidden;
 
     .header_item{
         display: flex;

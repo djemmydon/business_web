@@ -6,6 +6,9 @@
 
 .feature_article{
     background-color: $secondary-color;
+    width: 100%;
+  overflow: hidden;
+
 }
 .feature{
     background: $secondary-color;
@@ -22,6 +25,7 @@ padding: 2rem 0;
         padding: 40px;
         gap: 2rem;
 
+        
     }
 
 .feature_item{

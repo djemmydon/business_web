@@ -16,7 +16,7 @@ function Footer() {
             <span>Lorem ipsum dolor sit amet consectetur adipiscin eli a sit facilisis volutpat interdum non a magna tempus amet velit dolor sit.</span>
             </div>
 
-            <div className="footer_nav_sec col-md-6">
+            <div className="footer_nav_sec col-md-8">
                 {/* navbar_section 1 */}
                 <div className="nav_sec_1">
                 <ul>

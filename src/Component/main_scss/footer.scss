@@ -8,6 +8,8 @@
 .footer{
     background-color: #181818;
     padding: 1rem;
+  overflow: hidden;
+
 
 .footer_content{
 
@@ -15,6 +17,9 @@
         color: white;
         width: 20rem;
         padding: 10px;
+      @media screen and (max-width:700px) {
+          width: 100%;
+      }
         img{
             height: 1.5rem;
         margin: 10px 0;
