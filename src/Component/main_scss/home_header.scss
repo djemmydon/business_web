@@ -20,7 +20,7 @@ background-image: url(../../svg/Desktop.svg);
         overflow: hidden;
             @media screen and (max-width:700px) {
                 flex-wrap: wrap;
-                padding-top:5rem;
+                padding-top:1rem;
             }
 
           .image_side{
@@ -28,7 +28,10 @@ background-image: url(../../svg/Desktop.svg);
             margin-top: 60px;
             object-fit: contain;
             position: relative;
-            
+            @media screen and (max-width:700px) {
+            height: 100%;
+              
+            }
       
 
          img{
@@ -52,6 +55,13 @@ background-image: url(../../svg/Desktop.svg);
         margin-left: 30px;
 
         color: white;
+     @media screen and (max-width:700px) {
+  padding-top: 0rem;
+            
+              
+            }
+
+        
     }
 
     .text_head{
@@ -60,14 +70,14 @@ background-image: url(../../svg/Desktop.svg);
 
     h1{
         font-size:4rem ;
-        white-space: nowrap;
+        
       font-family: 'Titillium Web', sans-serif;
       color: $text_color;
     }
 
     h2{
         font-size:5rem ;
-        white-space: nowrap;
+       
       font-family: $head_font;
       font-weight: 500;
     }
@@ -85,7 +95,7 @@ background-image: url(../../svg/Desktop.svg);
             border: none;
   @media screen and (max-width:400px) {
 width: 85%;
-margin: 10px 10px;
+margin: 10px 0px;
 
   }
         

@@ -9,13 +9,19 @@ import Icon6 from '../../src/svg/icon6.svg'
 import left  from '../../src/svg/lines_left.svg'
 import right from '../../src/svg/lines_right.svg'
 import { Link } from 'react-router-dom'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 function PowerfulFeature() {
   return (
     <article className='feature_article'>
         <div className="feature contaimer-fluid">
-            <div className="feature_first_content container">
+            <div className="feature_first_content container" 
+                data-aos="fade-up"
+                 data-aos-duration="1000"
+            >
                 <div className="feature_item">
                   <img src={Icon1} alt="" />
 
@@ -39,7 +45,11 @@ function PowerfulFeature() {
 
     
             
-            <div className="feature_second_content container">
+            <div className="feature_second_content container"
+                data-aos="fade-up"
+                 data-aos-duration="1000"
+                 data-aos-delay="200"
+            >
                 <div className="feature_item2">
                     <div className="img_title">
                         
@@ -69,7 +79,9 @@ function PowerfulFeature() {
 
         
 
-        <div className="schedule_demo container">
+        <div className="schedule_demo container" data-aos="fade-up"
+                 data-aos-duration="1000"
+                 data-aos-delay="300">
           <div className="header_sd">
                   <img src={left} alt="" />
                   <h2>Schedule Demo</h2>
@@ -80,7 +92,7 @@ function PowerfulFeature() {
 
           <div className="text_sd">
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil q Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, provident.</p>
+            <span>Learn more about all the potential that our product can provide to enhance your buisness.</span>
            <Link to='/'>
               <button>BOOK A DEMO</button>
             </Link>

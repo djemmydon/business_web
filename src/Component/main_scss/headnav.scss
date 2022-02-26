@@ -18,6 +18,11 @@ a{
 .logo_eye{
     width: 9rem;
     margin: 1.3rem;
+    @media screen and (max-width:600px) {
+    width: 7rem;
+    margin-top: 2rem;
+
+    }
 }
 
         .menu_icon{

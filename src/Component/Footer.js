@@ -1,14 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './main_scss/footer.scss'
+import  Logo from '../../src/svg/Logo.svg'
 
 
 function Footer() {
   return (
-    <footer className='footer'>
+    <footer className='footer container-fluid'>
         <div className="footer_content row justify-content-between">
             <div className="footer_myrage col-md-3">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, officiis? Recusandae, fugiat ad repellat error perspiciatis consequatur molestias laborum, blanditiis obcaecati </p>
+                <div>
+                <img src={Logo} alt="" />
+
+                </div>
+            <span>Lorem ipsum dolor sit amet consectetur adipiscin eli a sit facilisis volutpat interdum non a magna tempus amet velit dolor sit.</span>
             </div>
 
             <div className="footer_nav_sec col-md-8">
@@ -84,7 +89,7 @@ function Footer() {
 
             </div>
         </div>
-        
+        <div className='container line'></div>
 
     </footer>
   )

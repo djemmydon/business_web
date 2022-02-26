@@ -10,7 +10,10 @@ import {BsPlayFill} from 'react-icons/bs'
 import PowerfulFeature from './PowerfulFeature'
 import Footer from './Footer'
 import Tab from './Tab'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 function HomeHeader() {
@@ -21,17 +24,37 @@ function HomeHeader() {
 
                                     <div className="header_item ">
                                         <div className=" text_side">
-                                        <div className="text_head">
+                                        <div className="text_head"
+                                        data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        >
                                             <h5>WE GO BLACK</h5>
                                         </div>
 
-                                        <div className="main_content">
-                                            <h1>Convert visitors into</h1>
-                                            <h2>Loyal Customers</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                        <div className="main_content"  >
+                                            <h1  data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='100'
+                                        >Convert visitors into</h1>
+                                            <h2
+                                            data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='150'
+
+                                            >Loyal Customers</h2>
+                                            <p
+                                            data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='200'
+                                            
+                                            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                         </div>
 
-                                            <div className="button_side">
+                                            <div className="button_side"
+                                              data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='250'
+                                            >
                                             <Link to='/'>
                                                     <button>
                                                         Book Demo
@@ -47,7 +70,12 @@ function HomeHeader() {
                                                 </div>
 
 
-                                                <div className=" image_side">
+                                                <div className=" image_side"
+                                                 data-aos="fade-left"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='200'
+                                                
+                                                >
                                                     <img src={Image} alt="" />
                                                     <img src={Image2} alt="" className='img_side_abs' />
                                                 </div>
@@ -59,17 +87,37 @@ function HomeHeader() {
 
                                     <div className="content_item row">
                                         <div className=" content_text_side col-md-6 col-md-6 col-lg-5  ">
-                                        <div className="text_head">
+                                        <div className="text_head"
+                                           data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        >
                                             <h5>WE GO BLACK</h5>
                                         </div>
 
                                         <div className="main_content">
-                                            <h1>Powerful products for a</h1>
-                                            <h2>great cause</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                                            <h1
+                                             data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='100'
+                                            >Powerful products for a</h1>
+                                            <h2
+                                             data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='150'
+                                            >great cause</h2>
+                                            <p
+                                             data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='200'
+                                            
+                                            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                         </div>
 
-                                            <div className="button_side">
+                                            <div className="button_side"
+                                             data-aos="fade-up"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='250'
+                                            >
                                             <Link to='/'>
                                              
                                                     More about our story<AiOutlineArrowRight/>
@@ -80,7 +128,11 @@ function HomeHeader() {
                                                 </div>
 
 
-                                                <div className=" video_side col-md-6 col-md-6 col-lg-5  ">
+                                                <div className=" video_side col-md-6 col-md-6 col-lg-5  "
+                                                 data-aos="zoom-in"
+                                        data-aos-duration="1000"
+                                        data-aos-delay='150'
+                                                >
                                                     
                                                     <img src={VideoImage} alt="" />
                                                     <div className='line'></div>

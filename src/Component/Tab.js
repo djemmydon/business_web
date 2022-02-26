@@ -4,7 +4,11 @@ import '../Component/main_scss/tabs.scss'
 import  Fancy1 from '../../src/images/fancy_section_1.png'
 import  Fancy2 from '../../src/images/fancy_section_2.png'
 import  Fancy3 from '../../src/images/fancy_section_3.png'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+// You can also use <link> for styles
+// ..
+AOS.init();
 
 
 function Tab() {
@@ -19,13 +23,17 @@ const onTogling =(index) => {
   return (
 
 
-    <div className='tab '>
+    <div className='tab ' 
+     data-aos="fade-up"
+     data-aos-duration="1000"
+     data-aos-delay='100'
+    >
 
     <div className="content_pane container">
         <div  className={toggle === 1 ? 'content_item content_active' : 'content_item'}>
            
 
-                                    <div className="header_item ">
+                                    <div className="tabs_header ">
                                         <div className=" text_side">
                                         <div className="text_head">
                                             <h5>FOR DEVS TEAMS</h5>
@@ -51,7 +59,7 @@ const onTogling =(index) => {
         <div className={toggle === 2 ? 'content_item content_active' : 'content_item'}>
    
 
-                                    <div className="header_item ">
+                                    <div className="tabs_header ">
                                         <div className=" text_side">
                                         <div className="text_head">
                                             <h5>ULTRA-FAST RESULTS</h5>
@@ -78,7 +86,7 @@ across all platforms and channels.</p>
         <div className={toggle === 3 ? 'content_item content_active' : 'content_item'}>
           
 
-                                    <div className="header_item ">
+                                    <div className="tabs_header ">
                                         <div className=" text_side">
                                         <div className="text_head">
                                             <h5>WIDE ACTIVATIONS</h5>
@@ -98,11 +106,11 @@ across all platforms and channels.</p>
                                                     <img src={Fancy3} alt="" />
                                                   
                                                 </div>
+
+                                                
     </div>
    </div>
-        </div>
-
-        <div className="navigation">
+      <div className="navigation">
             <ul>
                 <li className={toggle === 1 ? 'active_tab' : 'tab'} onClick={() => onTogling(1)}>Devs Features</li>
                 <li  className={toggle === 2 ? 'active_tab' : 'tab'} onClick={() => onTogling(2)}>Real-Time Results</li>
@@ -110,6 +118,9 @@ across all platforms and channels.</p>
             </ul>
         </div>
 
+        </div>
+
+     
 
     </div>
   

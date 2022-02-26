@@ -7,18 +7,29 @@
 
 .footer{
     background-color: #181818;
-
+    padding: 1rem;
 
 .footer_content{
 
+    .footer_myrage{
+        color: white;
+        width: 20rem;
+        padding: 10px;
+        img{
+            height: 1.5rem;
+        margin: 10px 0;
+        }
+    }
  
     .footer_nav_sec{
         display: flex;
       gap: 7em;
+        padding: 10px;
+
 
       @media screen and (max-width:700px) {
           gap: 0rem;
-         
+         width: 100%;
       }
 
           @media screen and (max-width:400px) {
@@ -27,7 +38,7 @@
       }
 
       .nav_sec_1, .nav_sec_2, .nav_sec_3{
-
+        
         h3{
             font-size: 1.3rem;
             color: #B3B6BB;
@@ -54,5 +65,13 @@
       }
     }
 }
+
+.line{
+    position: relative;
+    padding: 10px;
+   border-bottom: .5px solid rgb(68, 68, 68);
+}
+
+
 
 }

@@ -10,25 +10,25 @@ const NavItem = [
     {
         id: 1,
         name:'about',
-        link: '/about'
+        link: '/'
     },
     {
 
         id: 2,
         name:'pricing',
-        link: '/princing'
+        link: '/'
     },
     {
 
         id: 3,
         name:'patner',
-        link: '/patner'
+        link: '/'
     },
     {
 
         id: 4,
         name:'contact',
-        link: '/contact'
+        link: '/'
     },
     {
 

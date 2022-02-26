@@ -9,8 +9,17 @@
     .content_item{
         display: none;
 
-        .header_item{
+        .tabs_header{
             padding-top: 5rem;
+
+        
+        display: flex;
+        overflow: hidden;
+            @media screen and (max-width:700px) {
+                flex-wrap: wrap;
+                padding-top:5rem;
+            }
+
 
             .text_head{
                 h5{
@@ -27,8 +36,80 @@
                 h2{
                     font-size: 3rem;
                 }
+
+                
+                @media screen and (max-width:700px) {
+           h1{
+                    font-size: 2rem;
+                }
+                h2{
+                    font-size: 2rem;
+                }
+              
             }
-        }
+
+            }
+
+                      .image_side{
+            height: 525px;
+            margin-top: 60px;
+            object-fit: contain;
+            position: relative;
+                @media screen and (max-width:700px) {
+            height: 100%;
+              
+            }
+
+      
+
+         img{
+              max-width:100%;
+              max-height: 520px;
+            position: relative;
+    }
+
+    .img_side_abs{
+        position: absolute;
+       z-index: -100;
+        inset: 0 0rem 0 15rem;
+    }
+    }
+
+
+     .text_side{
+        display: flex;
+        flex-direction: column;
+  padding-top: 8rem;
+        margin-left: 30px;
+
+        color: white;
+    }
+
+    .text_head{
+        color: $button_color;
+    }
+
+    h1{
+        
+        
+      font-family: 'Titillium Web', sans-serif;
+      color: $text_color;
+    }
+
+    h2{
+     
+        
+      font-family: $head_font;
+      font-weight: 500;
+    }
+
+    p{
+        width: 90%;
+        font-family: 'Nunito';
+    }
+    }
+
+
 
     }
 
@@ -58,19 +139,23 @@
 }
 
  .navigation{
-   
+padding: 10px;
         ul{
             display: flex;
             gap: 40px;
-            justify-content: flex-end;
-    padding-bottom: 5rem;
-    padding-right: 10rem;
+            justify-content: center;
+    
+    @media screen and (max-width: 500px) {
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+
 
             li{
             color: #B2B6BB;
             border-bottom: 2px solid #B2B6BB;
             cursor: pointer;
-
+            white-space: nowrap;
             }
 
             .active_tab{
