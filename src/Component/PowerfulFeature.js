@@ -81,11 +81,20 @@ function PowerfulFeature() {
 
         <div className="schedule_demo container" data-aos="fade-up"
                  data-aos-duration="1000"
-                 data-aos-delay="300">
-          <div className="header_sd">
-                  <img src={left} alt="" />
+                 data-aos-delay="250"
+                 >
+          <div className="header_sd" >
+                  <img src={left} alt="" 
+                    data-aos="fade-right"
+                 data-aos-duration="1000"
+                 data-aos-delay="250"
+                  />
                   <h2>Schedule Demo</h2>
-                  <img src={right} alt="" />
+                  <img src={right} alt="" 
+                  data-aos="fade-left"
+                 data-aos-duration="1000"
+                 data-aos-delay="250"
+                  />
 
           
           </div>
