@@ -1,6 +1,6 @@
 import React from 'react'
 import GetAllCoins from './Component/coins/GetAllCoins'
-import GetCoins from './Component/coins/GetCoins'
+
 
 
 

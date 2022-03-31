@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState} from 'react';
 import { Sling as Hamburger } from 'hamburger-react'
 import  Logo from '../../src/svg/Logo.svg'
 
@@ -71,7 +71,8 @@ function HeadNav() {
            <div className={open ? 'my_navbar active' : 'my_navbar'}>
                <ul>
                   {NavItem.map((nav, id) => (
-                      <li key={id}>
+                      <li key={id} onClick={closeMenuBar}>
+                          
                           <Link to={nav.link}>
                           {nav.name}
                           </Link>
