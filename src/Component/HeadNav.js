@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import { Sling as Hamburger } from 'hamburger-react'
 import  Logo from '../../src/svg/Logo.svg'
 
 import { Link } from 'react-router-dom'
 import './main_scss/headnav.scss'
+
 
 
 const NavItem = [
@@ -16,13 +17,13 @@ const NavItem = [
 
         id: 2,
         name:'pricing',
-        link: '/'
+        link: '/coins'
     },
     {
 
         id: 3,
-        name:'patner',
-        link: '/'
+        name:'News',
+        link: '/cryptos-new'
     },
     {
 
@@ -40,11 +41,15 @@ const NavItem = [
 
 function HeadNav() {
 
+
     const [open, setOpen] = useState(false)
+
 
   
   const handleClick = () => setOpen(!open)
-//   const closeMenuBar = () => setOpen(false)
+  const closeMenuBar = () => setOpen(false)
+
+
 
   return (
    <header>
@@ -54,6 +59,10 @@ function HeadNav() {
 
              
            </div>
+
+     
+
+
               <div className="menu_icon" onClick= {handleClick}>
            <Hamburger  color='#02ffe2' size={22}
       toggled={open} toggle={setOpen}

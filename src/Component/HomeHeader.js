@@ -12,15 +12,26 @@ import Footer from './Footer'
 import Tab from './Tab'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import GetCoins from './coins/GetCoins'
+import GetAllCoins from './coins/GetAllCoins'
+
+
 // ..
 AOS.init();
 
 
 function HomeHeader() {
+
+
+
+    
   return (
 
     <header>
  <div className="container-fluid my_header">
+
+
+ 
 
                                     <div className="header_item ">
                                         <div className=" text_side">
@@ -82,7 +93,22 @@ function HomeHeader() {
     </div>
 
     <Tab />
+   
    </div>
+   <div className='home_coin'>  
+        
+    
+             <GetCoins/>
+     
+            
+
+            <div className='top container py-5'>
+                <h5>Top 10 Cryptocurrencies</h5>
+              <Link to='/coins'>See All </Link>
+            </div>
+            <GetAllCoins simplified/>
+            
+        </div>
  <div className="container-fluid content_vid ">
 
                                     <div className="content_item row">

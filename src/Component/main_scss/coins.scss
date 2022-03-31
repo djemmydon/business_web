@@ -1,0 +1,98 @@
+@import "../../css/mixin.scss";
+@import "../../css/partial.scss";
+
+@include google-font('Raleway');
+@include google-font('Nunito');
+
+
+.coins{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background: rgb(7,148,181);
+    background: linear-gradient(90deg, rgba(7,148,181,1) 0%, rgba(0,247,249,1) 100%);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+.coin_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 40px;
+
+    @media screen and (max-width: 600px) {
+    grid-template-columns: 150px 150px;
+        
+    }
+
+    @media screen and (max-width: 400px) {
+        grid-template-columns: 200px;
+        text-align: center;
+            
+        }
+}
+.coin_base{
+    color: red;
+    height: 200px;
+ 
+background-color: rgb(255, 255, 255);
+padding: 20px 10px;
+border-radius: 10px;
+box-shadow: -1px -5px 64px -40px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px -5px 64px -40px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -5px 64px -40px rgba(0,0,0,0.75);
+
+    .img_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    img{
+        height: 30px;
+        max-width: 50px;
+        border-radius: 30px;
+        margin: 0 auto;
+        padding: 0.1rem;
+    }
+
+    h4{
+        font-size: 15px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        color: $secondary_color;
+        font-size: 12px;
+      width: 100%;
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: 600px) {
+    
+        p{
+            text-align:center;
+            color: $secondary_color;
+            font-size: 12px;
+            font-weight: 500;
+        }
+            
+        }
+}
+
+.search {
+    padding: 20px;
+input{
+    margin: 0 auto;
+   width: 400px;
+   height:50px;
+   border: none;
+   outline: none;
+   border-radius: 10px;
+}
+}
