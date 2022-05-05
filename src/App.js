@@ -1,8 +1,8 @@
-import React from 'react'
-
+import React from 'react';
 import './App.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HeadNav from './Component/HeadNav';
+import Footer from './Component/Footer';
 import HomeHeader from './Component/HomeHeader';
 
 import Coins from './Coins';
@@ -26,6 +26,8 @@ function App() {
     <Route  element={<CoinsDeTails />} path='/coin/:uuid'/>
 
     </Routes>
+
+    <Footer />
 
 
     </BrowserRouter>

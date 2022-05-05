@@ -10,7 +10,7 @@ import './main_scss/headnav.scss'
 const NavItem = [
     {
         id: 1,
-        name:'about',
+        name:'Home',
         link: '/'
     },
     {

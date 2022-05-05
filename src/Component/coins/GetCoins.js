@@ -24,23 +24,27 @@ const GetCoins = ({simplified}) => {
   return (
     <section>
             
-        <div className='coins container'>
+        <div className='price_change_rank container'>
        
-            <div className='total_coins'>
-                <h5>Total Coins</h5>
+            <div className='coin_flex'>
+               
                 <span >{millify(data?.data?.stats.total)}</span>
+                <p>Total Coins</p>
             </div>
-            <div className='total_coins'>
-                <h5>Total Exchanges</h5>
+            <div className='coin_flex'>
+                
                 <span >{millify(data?.data?.stats?.totalExchanges)}</span>
+                <p>Total Exchanges</p>
             </div>
-            <div className='total_coins'>
-                <h5>Total Markets Caps</h5>
+            <div className='coin_flex'>
+                
                 <span>{millify(data?.data?.stats?.totalMarketCap)}</span>
+                <p>Total Markets Caps</p>
             </div>
-            <div className='total_coins'>
-                <h5>Total 24th Volumes</h5>
+            <div className='coin_flex'>
+             
                 <span>{millify(data?.data?.stats?.total24hVolume)}</span>
+                <p>Total 24th Volumes</p>
             </div>
             
         </div>

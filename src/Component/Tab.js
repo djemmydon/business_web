@@ -42,7 +42,7 @@ const onTogling =(index) => {
                                         <div className="main_content">
                                             <h1>This is a special</h1>
                                             <h2>Benefit for Devs</h2>
-                                            <p>Get your customers’ touch points in one single place across all platforms and channels.</p>
+                                            <p>Get your customers touch points in one single place across all platforms and channels.</p>
                                         </div>
 
                                            

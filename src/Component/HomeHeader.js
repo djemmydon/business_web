@@ -4,11 +4,10 @@ import  Image from '../../src/images/HeroImage.png'
 import  VideoImage from '../../src/images/video_image.png'
 import  Image2 from '../../src/svg/Hero_BG_Image.svg'
 import './main_scss/home_header.scss'
-import './main_scss/home_header.scss'
+
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import {BsPlayFill} from 'react-icons/bs'
 import PowerfulFeature from './PowerfulFeature'
-import Footer from './Footer'
 import Tab from './Tab'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -102,7 +101,7 @@ function HomeHeader() {
      
             
 
-            <div className='top container py-5'>
+            <div className='top container py-5 top10style'>
                 <h5>Top 10 Cryptocurrencies</h5>
               <Link to='/coins'>See All </Link>
             </div>
@@ -168,7 +167,6 @@ function HomeHeader() {
    </div>
 
         <PowerfulFeature />
-        <Footer />
     </header>
   
   )
